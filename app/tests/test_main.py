@@ -10,16 +10,7 @@ def test_list_view_success():
     payload = {"batchid": "id0101", "payload": [[1, 2], [3, 4]]}
 
     response = client.post('/items', json=payload)
-    mockedResponse = {
-    "batchid": "010101",
-    "response": [
-        3,
-        7
-    ],
-    "status": "complete",
-    "started_at": "2024-05-31T18:17:18.091231",
-    "end_at": "2024-05-31T18:17:18.945897"
-   }
+  
 
     assert response.status_code == 200
     assert response.json()["response"]== [3,7]

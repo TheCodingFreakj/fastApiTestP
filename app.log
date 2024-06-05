@@ -37,3 +37,12 @@
 2024-05-31 18:17:18,091 - INFO - batchid='010101' payload=[[1, 2], [4, 3]]
 2024-05-31 18:17:18,091 - INFO - Input processed: [[1, 2], [4, 3]]
 2024-05-31 18:17:18,945 - INFO - Response processed: {'batchid': '010101', 'response': [3, 7], 'started_at': datetime.datetime(2024, 5, 31, 18, 17, 18, 91231), 'end_at': datetime.datetime(2024, 5, 31, 18, 17, 18, 945897), 'status': 'complete'}
+2024-06-05 22:31:42,488 - INFO - {'batchid': '010101', 'payload': [[1, 2], [4, 3]]}
+2024-06-05 22:31:42,488 - INFO - Input processed: [[1, 2], [4, 3]]
+2024-06-05 22:31:42,584 - ERROR - Error processing request: 'TaskService' object has no attribute 'sum_inner'
+2024-06-05 22:33:38,670 - INFO - {'batchid': '010101', 'payload': [[1, 2], [4, 3]]}
+2024-06-05 22:33:38,670 - INFO - Input processed: [[1, 2], [4, 3]]
+2024-06-05 22:33:39,452 - ERROR - Error processing request: TaskService.sum_inner() takes 1 positional argument but 2 were given
+2024-06-05 22:34:14,623 - INFO - {'batchid': '010101', 'payload': [[1, 2], [4, 3]]}
+2024-06-05 22:34:14,623 - INFO - Input processed: [[1, 2], [4, 3]]
+2024-06-05 22:34:15,510 - INFO - Response processed: {'batchid': '010101', 'response': [3, 7], 'started_at': datetime.datetime(2024, 6, 5, 22, 34, 14, 623347), 'end_at': datetime.datetime(2024, 6, 5, 22, 34, 15, 510177), 'status': 'complete'}

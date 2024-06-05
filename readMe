@@ -1,15 +1,16 @@
 In root folder
 python -m venv env #create the env folder
 ./env/Scripts/activate #activate the env folder
-cd app
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 80 --reload
 
-http://0.0.0.0:80/items
+pip install -r requirements.txt
+uvicorn main:app --host 0.0.0.0 --port 8080 --reload
+
+http://0.0.0.0:8080/items
 provide the payload
 {
     "batchid":"010101",
     "payload":[[1,2],[4,3]]
 }
 For running tests:
+cd app/tests
 pytest
